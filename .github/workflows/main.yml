@@ -49,7 +49,7 @@ jobs:
         git clone https://github.com/LineageOS/android_packages_apps_SamsungServiceMode -b cm-14.1 ~/TWRP/packages/apps/SamsungServiceMode
         git clone https://github.com/diepquynh/android_device_samsung_sprd-common -b cm-14.1 ~/TWRP/device/samsung/sprd-common
         git clone https://github.com/diepquynh/android_device_samsung_scx30g-common -b cm-14.1 ~/TWRP/device/samsung/scx30g-common
-        git clone https://github.com/diepquynh/android_device_samsung_scx35-common -b cm-14.1 ~/TWRP/device/samsung/scx35-common
+        git clone https://github.com/NotNoelChannel/android_device_samsung_scx35-common -b cm-14.1 ~/TWRP/device/samsung/scx35-common
         git clone https://github.com/diepquynh/android_hardware_sprd -b cm-14.1 ~/TWRP/hardware/sprd
         git clone https://github.com/LineageOS/android_hardware_samsung -b cm-14.1 ~/TWRP/hardware/samsung
         source build/envsetup.sh
