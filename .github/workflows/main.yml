@@ -52,6 +52,7 @@ jobs:
         git clone https://github.com/NotNoelChannel/android_device_samsung_scx35-common -b cm-14.1 ~/TWRP/device/samsung/scx35-common
         git clone https://github.com/diepquynh/android_hardware_sprd -b cm-14.1 ~/TWRP/hardware/sprd
         git clone https://github.com/LineageOS/android_hardware_samsung -b cm-14.1 ~/TWRP/hardware/samsung
+        git clone https://github.com/xiaolu/mkbootimg_tools -b master /home/runner/TWRP/out/host/linux-x86/bin/
         source build/envsetup.sh
         export ALLOW_MISSING_DEPENDENCIES=true
         export LC_ALL=C
