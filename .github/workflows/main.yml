@@ -36,6 +36,11 @@ jobs:
         git clone https://github.com/NotNoelChannel/android_vendor_samsung_j13g -b cm-14.1 ~/TWRP/vendor/samsung/j13g
         git clone --depth 1 --branch android-7.1.2_r37 --single-branch https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8 /opt/toolchains/arm-eabi-4.8/
         python3 ~/.bin/repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
+    - name: Cleanups before build
+      run: |
+        du -sh /var/cache/apt/archives
+        sudo apt-get clean
+        sudo apt-get autoremove --purge
     - name: Building LineageOS
       run: |
         OLDPATH=$PATH
