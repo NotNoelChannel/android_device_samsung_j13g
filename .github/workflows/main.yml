@@ -39,6 +39,7 @@ jobs:
     - name: Cleanups before build
       run: |
         sudo apt-get clean
+        sudo journalctl --vacuum-time=3d
         sudo apt-get autoremove --purge
     - name: Building LineageOS
       run: |
