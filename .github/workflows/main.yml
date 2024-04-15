@@ -63,7 +63,7 @@ jobs:
         export LC_ALL=C
         export ARCH=arm
         export CROSS_COMPILE=/opt/toolchains/arm-eabi-4.8/bin/arm-eabi-
-        lunch lineage_j13g-eng
+        lunch lineage_j13g-userdebug
         make -j$(nproc --all) otapackage
         export PATH=$OLDPATH
         export JAVA_HOME=$OLDJAVAHOME
